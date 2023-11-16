@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Enter Phone - Email">
+
+        <lightning-input label="Email" value={email} onchange={handleemailchange}></lightning-input>
+        <lightning-input label="Phone" value={phone} onchange={handlephonechange}></lightning-input>
+
+        <c-child-component2 email={email} phone={phone}></c-child-component2>
+    </lightning-card>
+</template>
