@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Enter Names">
+        <lightning-input label="First Name" value={firstname} onchange={handlefirstname}></lightning-input>
+        <lightning-input label="Last Name" value={lastname} onchange={handlelastnme}></lightning-input>
+
+        <!--Call the child component1 for pass parent input values-->
+        <c-child-Component1 first-name={firstname}
+                            last-name={lastname}>
+        </c-child-Component1>
+    </lightning-card>
+</template>
