@@ -1,0 +1,28 @@
+<template>
+    <template if:true={buses.data}>
+        <div class="slds-scrollable_y">
+            <lightning-layout horizontal-align="center" multiple-rows>
+
+                <template for:each={buses.data} for:item="bus">
+
+                    <lightning-layout-item key={bus.Id} 
+                                           padding="around-small" 
+                                           size="12" 
+                                           small-device-size="6"
+                                           medium-device-size="4" 
+                                           large-device-size="3">
+
+                            <!--<c-bus-beer-tile bus-rec={bus} 
+                                             selected-bus={selectedBus}
+                                             onbusselect={handleClick}>
+                            </c-bus-beer-tile>-->
+                            
+                            
+                    </lightning-layout-item>
+
+                </template>
+
+            </lightning-layout>
+        </div>
+    </template>
+</template>

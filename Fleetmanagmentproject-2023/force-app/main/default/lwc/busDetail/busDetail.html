@@ -1,0 +1,15 @@
+<template>
+    <lightning-card>
+        <p class="slds-p-horizontal_small">
+            <lightning-record-form
+                record-id={busRec}
+                object-api-name={objectApiName}
+                fields={fields}
+                columns="1"
+                mode="edit"
+                onsuccess={handleSuccess}>
+            </lightning-record-form>
+        </p>
+
+    </lightning-card>
+</template>
